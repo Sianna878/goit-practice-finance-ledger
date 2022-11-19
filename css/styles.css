@@ -57,13 +57,21 @@ img {
 /* header of site */
 
 .header {
-  background-color: darkslategray;
-}
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+ }
 
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  );
 }
 
 .logo {
