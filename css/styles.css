@@ -395,15 +395,11 @@ img {
 .team-soc-item {
 }
 .team-soc-link {
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .team-soc-icon {
   fill: #ffffff;
-}
-
-.team-item-wrap:hover .team-soc-link {
-  opacity: 1;
 }
 
 .team-item-title {
@@ -422,6 +418,19 @@ img {
   color: #333333;
 }
 
+.team-ower {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color:rgba(0, 0, 0, 0.6);
+}
+
+.team-item:hover .team-ower {
+ opacity: 1;
+}
 /* callback */
 
 .callback {
