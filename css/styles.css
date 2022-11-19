@@ -380,6 +380,9 @@ img {
 
 .team-item-wrap {
   position: relative;
+  transition-property: transform, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-list {
@@ -425,11 +428,18 @@ img {
   right: 0;
   bottom: 0;
   opacity: 0;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color:rgba(0, 0, 0, 0.6);
 }
 
 .team-item:hover .team-ower {
  opacity: 1;
+}
+.team-item:hover .team-item-wrap {
+  transform: scale(1.03);
+  box-shadow: 0 0 8px 1px;
 }
 /* callback */
 
