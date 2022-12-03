@@ -47,16 +47,20 @@
         <div class="container">
           <p class="hero-uptitle">The Sky Is The Limit</p>
           <h1 class="hero-title">We provide world class financial assistance</h1>
-          <a href="#" class="hero-button link">Read More</a>
+          <a href="#" class="hero-btn link">
+            <svg class="hero-btn-icon" width="9" height="18">
+              <use href="./images/icons.svg#icon-angle-right"></use>
+            </svg>
+            Read More</a>
         </div>
       </section>
 
       <section class="services">
         <div class="services-container container">
-          <h2 class="hidden">Our services</h2>
+          <h2 class="visually-hidden">Our services</h2>
           <ul class="services-list list">
             <li class="service-item">
-              <div class="icon-circle">
+              <div class="icon-box">
                 <svg class="services-icon" width="35" height="35">
                   <use href="./images/icons.svg#icon-university"></use>
                 </svg>
@@ -68,7 +72,7 @@
               </p>
             </li>
             <li class="service-item">
-              <div class="icon-circle">
+              <div class="icon-box">
                 <svg class="services-icon" width="35" height="35">
                   <use href="./images/icons.svg#icon-book"></use>
                 </svg>
@@ -80,7 +84,7 @@
               </p>
             </li>
             <li class="service-item">
-              <div class="icon-circle">
+              <div class="icon-box">
                 <svg class="services-icon" width="35" height="35">
                   <use href="./images/icons.svg#icon-pencil"></use>
                 </svg>
@@ -286,8 +290,10 @@
                   </ul>
                 </div>
               </div>
-              <h3 class="team-item-title">John Doe</h3>
-              <p class="team-item-role">President</p>
+              <div class="team-item-box">
+                <h3 class="team-item-title">John Doe</h3>
+                <p class="team-item-role">President</p>
+              </div>
             </li>
             <li class="team-item">
               <div class="team-item-wrap">
@@ -350,8 +356,10 @@
                   </ul>
                 </div>
               </div>
-              <h3 class="team-item-title">Jane Doe</h3>
-              <p class="team-item-role">Vice President</p>
+              <div class="team-item-box">
+                <h3 class="team-item-title">Jane Doe</h3>
+                <p class="team-item-role">Vice President</p>
+              </div>
             </li>
             <li class="team-item">
               <div class="team-item-wrap">
@@ -414,8 +422,10 @@
                   </ul>
                 </div>
               </div>
-              <h3 class="team-item-title">Steve Smith</h3>
-              <p class="team-item-role">Marketing Head</p>
+              <div class="team-item-box">
+                <h3 class="team-item-title">Steve Smith</h3>
+                <p class="team-item-role">Marketing Head</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -433,11 +443,27 @@
           </div>
           <div class="callback-wrap">
             <h2 class="callback-title">Request Callback</h2>
-            <ul class="callback-list list">
-              <li class="callback-item"><p class="callback-line name">Enter your name</p></li>
-              <li class="callback-item"><p class="callback-line email">Enter email*</p></li>
-            </ul>        
-            <button class="callback-btn" type="button">Send</button>
+            <form class="form">
+              <div class="form-field">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="user-name"
+                  aria-label="name"
+                  placeholder="Enter your name"
+                  required
+                >
+                <input
+                  class="form-input"
+                  type="email"
+                  name="user-email"
+                  aria-label="email"
+                  placeholder="Enter email*"
+                  required
+                >
+              </div>
+              <button class="form-btn" type="submit">Send</button>
+            </form>        
           </div>
         </div>
       </section>
@@ -475,8 +501,9 @@
             </a>
           </li>
         </ul>
-        <p class="footer-text">Copyright <span>©</span>2021 - FinanceLedger</p>
+        <p class="footer-text">Copyright <span class="footer-copyright-sign">©</span> 2021 - FinanceLedger</p>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
