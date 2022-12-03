@@ -1,0 +1,112 @@
+.team {
+    padding-top: 50px;
+    padding-bottom: 59px;
+  }
+  
+  .team-container {
+  }
+  
+  .team-uptitle {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: calc(33 / 20);
+    text-align: center;
+    color: #333333;
+  }
+  
+  .team-title {
+    margin-bottom: 34px;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: calc(48 / 38);
+    text-align: center;
+    color: #333333;
+  }
+  
+  .team-text {
+    margin-bottom: 45px;
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    text-align: center;
+    color: #333333;
+  }
+  
+  .team-list {
+    display: flex;
+    justify-content: center;
+    gap: 19px;
+  }
+  
+  .team-item {
+    margin-bottom: 13px;
+    flex-basis: calc((100% - 38px) / 3);
+  }
+  
+  .team-item-wrap {
+    position: relative;
+    transition-property: transform, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .team-soc-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .team-soc-item {
+  }
+  .team-soc-link {
+    /* opacity: 0; */
+  }
+  
+  .team-soc-icon {
+    fill: #ffffff;
+  }
+  
+  .team-item-box {
+    padding: 13px 0;
+  }
+  
+  .team-item-title {
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: calc(32 / 25);
+    text-align: center;
+    color: #333333;
+  }
+  
+  .team-item-role {
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    text-align: center;
+    color: #333333;
+  }
+  
+  .team-ower {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color:rgba(0, 0, 0, 0.6);
+  }
+  
+  .team-item:hover .team-ower {
+   opacity: 1;
+  }
+  
+  .team-item:hover .team-item-wrap {
+    transform: scale(1.03);
+    box-shadow: 0 0 8px 1px;
+  }

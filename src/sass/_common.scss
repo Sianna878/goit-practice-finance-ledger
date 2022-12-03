@@ -1,0 +1,21 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+:root {
+    --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .container {
+    width: 1380px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    /* outline: 2px solid red; */
+  }
+  
+  section {
+    outline: 2px solid red;
+  }
